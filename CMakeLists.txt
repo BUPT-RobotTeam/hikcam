@@ -12,7 +12,7 @@ find_package(pybind11 REQUIRED)
 include_directories(${PYTHON_INCLUDE_DIRS})
 set(SOURCES ${CMAKE_CURRENT_LIST_DIR}/hikcam.cpp)
 
-#add_executable(hikcam ${SOURCES})
+# add_executable(hikcam ${SOURCES})
 pybind11_add_module(${CMAKE_PROJECT_NAME} ${SOURCES})
 
 IF (CMAKE_SYSTEM_NAME MATCHES "Linux")
